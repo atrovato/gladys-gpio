@@ -1,0 +1,29 @@
+{
+  "name": "gladys-gpio-sensor",
+  "version": "0.0.1",
+  "description": "GPIO sensors reader",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gladys",
+    "dht",
+    "sensor",
+    "temperature",
+    "humidity"
+  ],
+  "author": "Alexandre Trovato",
+  "license": "CC-BY-NC-SA-3.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atrovato/gladys-gpio-sensor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/atrovato/gladys-gpio-sensor/issues"
+  },
+  "homepage": "https://github.com/atrovato/gladys-gpio-sensor#readme",
+  "dependencies": {
+    "node-grovepi": "^2.0.4"
+  }
+}

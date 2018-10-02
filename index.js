@@ -1,4 +1,5 @@
 const watch = require('./lib/watchAll.js');
+const setup = require('./lib/install.js');
 
 module.exports = function(sails) {
     gladys.on('ready', function() {
@@ -7,6 +8,6 @@ module.exports = function(sails) {
     });
 
     return {
-        setup: sensor
+        setup: setup
     };
 };

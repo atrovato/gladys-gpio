@@ -11,7 +11,8 @@
     "dht",
     "sensor",
     "temperature",
-    "humidity"
+    "humidity",
+    "light resistor "
   ],
   "author": "Alexandre Trovato",
   "license": "CC-BY-NC-SA-3.0",
@@ -24,6 +25,7 @@
   },
   "homepage": "https://github.com/atrovato/gladys-gpio-sensor#readme",
   "dependencies": {
-    "node-grovepi": "^2.0.4"
+    "rpio": "^0.9.22",
+    "bluebird": "^3.5.2"
   }
 }

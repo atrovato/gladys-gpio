@@ -26,6 +26,8 @@
   "homepage": "https://github.com/atrovato/gladys-gpio-sensor#readme",
   "dependencies": {
     "rpio": "^0.9.22",
-    "bluebird": "^3.5.2"
+    "bluebird": "^3.5.2",
+    "mcp-adc": "^0.1.0",
+    "spi": "^0.2.0"
   }
 }

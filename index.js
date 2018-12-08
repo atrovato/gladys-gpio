@@ -16,7 +16,8 @@ module.exports = function(sails) {
 
 function watchWithInterval() {
   // Read devices every second
-  new Promise(watch).finally(() => {
+  new Promise(watch).finally(function() {
+    console.log('watch done, ready to run again');
     setTimeout(watchWithInterval, 1000);
   });
 }

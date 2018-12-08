@@ -1,6 +1,7 @@
 const watch = require('./lib/watchAll.js');
 const setup = require('./lib/setup.js');
 const exec = require('./lib/exec.js');
+const Promise = require('bluebird');
 
 module.exports = function(sails) {
   gladys.on('ready', function() {
@@ -15,9 +16,7 @@ module.exports = function(sails) {
 
 function watchWithInterval() {
   // Read devices every second
-  watch.then(() => {
-    setTimeout(watchWithInterval, 1000);
-  }).catch(() => {
+  new Promise(watch).finally(() => {
     setTimeout(watchWithInterval, 1000);
   });
 }

@@ -4,8 +4,7 @@ const exec = require('./lib/exec.js');
 
 module.exports = function(sails) {
   gladys.on('ready', function() {
-    // Read devices every 10 seconds
-    setInterval(watch, 1000);
+    watchWithInterval();
   });
 
   return {
@@ -13,3 +12,12 @@ module.exports = function(sails) {
     setup: setup
   };
 };
+
+function watchWithInterval() {
+  // Read devices every second
+  watch.then(() => {
+    setTimeout(watchWithInterval, 1000);
+  }).catch(() => {
+    setTimeout(watchWithInterval, 1000);
+  });
+}
